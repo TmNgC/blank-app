@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Eduprism")
-st.write()
+st.write(
 
 #Quiz data
 quiz_data = [
@@ -38,3 +38,4 @@ if st.button("Submit"):
     st.session_state.current_question += 1
   else:
     st.write("Quiz completed! Your score is:", st.session_state.score, "/", len(quiz_data))
+)
